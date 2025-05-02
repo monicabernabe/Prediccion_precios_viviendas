@@ -115,6 +115,14 @@ Estas métricas demuestran que el modelo tiene una capacidad predictiva aceptabl
 3. Ejecuta la app:
   streamlit run app.py
 
+## 🌐 Demo en vivo
+
+👉 [Haz clic aquí para ver la app en Streamlit]([https://tu-enlace.streamlit.app](https://monicabernabe-prediccion-precios-viviendas-app-7icjkh.streamlit.app/))
+
+### Descripción del Proyecto
+
+Esta aplicación permite predecir el precio de una vivienda en Ámsterdam utilizando un modelo de **Gradient Boosting Regressor**. Con solo ingresar el área de la vivienda, el número de habitaciones, y las coordenadas geográficas (latitud y longitud), la app estima el precio de la vivienda. El modelo fue entrenado con datos reales de precios de viviendas en Ámsterdam, por lo que puede ayudar a evaluar el valor de una propiedad en esa área.
+
 ## Autora
 Mónica Bernabé
 Ingeniera Técnica Industrial | Aseguramiento de calidad | Consultora en Validación de Sistemas | Ciencia de Datos
