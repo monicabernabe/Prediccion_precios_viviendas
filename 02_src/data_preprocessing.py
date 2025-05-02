@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from cargar_datos import load_and_split_data
 
 # Cargar los datos
-train_data, test_data = load_and_split_data()
+train_data, test_data = load_and_split_data('data/HousingPrices.csv')
 
 # Funcion para limpieza de datos
 def cleaning_data (data):

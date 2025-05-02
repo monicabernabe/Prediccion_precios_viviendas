@@ -2,10 +2,9 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 
 # Cargar el modelo entrenado
-model_path = r'C:\Workspace\02 - Proyecto prediccion precios vivienda\ml_project_prediccion_precios\GradientBoostingRegressor_model_precios_viviendas.pkl'
+model_path = 'GradientBoostingRegressor_model_precios_viviendas.pkl'
 model = pickle.load(open(model_path, 'rb'))
 
 # Función para realizar el preprocesamiento y la predicción

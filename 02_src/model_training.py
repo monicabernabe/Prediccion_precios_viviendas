@@ -4,8 +4,19 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import cross_val_score, GridSearchCV
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Cargar los datos
-X_train, X_test, y_train, y_test = load_and_split_data()
+from src.cargar_datos import load_and_split_data
+from src.data_preprocessing import cleaning_data
+
+# Cargar  y limpiar los datos
+train_data, test_data = load_and_split_data('data/HousingPrices.csv')
+train_data = cleaning_data(train_data)
+test_data = cleaning_data(test_data)
+
+#Separar variables
+y_train = train_data['Price']
+y_test = test_data['Price']
+X_train = train_data.drop('Price', axis=1)
+X_test = test_data.drop('Price', axis=1)
 
 # Definir los hiperparametros
 gb_model_2 = GradientBoostingRegressor(
@@ -20,7 +31,7 @@ gb_model_2 = GradientBoostingRegressor(
 gb_model_2.fit(X_train, y_train)
 
 # Realizar predicciones
-y_pred = gb_model.predict(X_test)
+y_pred = gb_model_2.predict(X_test)
 
 # Evaluar el rendimiento del modelo
 mse = mean_squared_error(y_test, y_pred)

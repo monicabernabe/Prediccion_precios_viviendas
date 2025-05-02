@@ -2,12 +2,13 @@
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import sys
 from sklearn.model_selection import train_test_split
 
 # Cargar datos y dividir el conjunto de datos
-def load_and_split_data():
+def load_and_split_data(data):
     try:
-        df_precio = pd.read_csv('HousingPrices.csv')
+        df_precio = pd.read_csv(data)
     except FileNotFoundError:
         print("Error: No se encontró el archivo 'HousingPrices.csv'.")
         sys.exit()
