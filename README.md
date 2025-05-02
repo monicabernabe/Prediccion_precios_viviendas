@@ -117,7 +117,7 @@ Estas métricas demuestran que el modelo tiene una capacidad predictiva aceptabl
 
 ## 🌐 Demo en vivo
 
-👉 [Haz clic aquí para ver la app en Streamlit]([https://tu-enlace.streamlit.app](https://monicabernabe-prediccion-precios-viviendas-app-7icjkh.streamlit.app/))
+👉 [Haz clic aquí para ver la app en Streamlit](https://monicabernabe-prediccion-precios-viviendas-app-7icjkh.streamlit.app/)
 
 ### Descripción del Proyecto
 
